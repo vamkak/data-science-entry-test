@@ -5,7 +5,7 @@ def check_divisibility(num, divisor):
     - Both num and divisor must be numeric.
     - Return True if num is divisible by divisor, False otherwise.
     """
-    return num % divisor == 0
+    return (num % divisor == 0)
 
 
 # Task 2
