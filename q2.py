@@ -5,8 +5,10 @@ def find_and_replace(lst, find_val, replace_val):
     - lst must be a list.
     - Return the modified list.
     """
-    return [replace_val if item == find_val else item for item in lst]
-
+    for item in lst:
+        if item == find_val:
+            lst[lst.index(item)] = replace_val
+    return lst
 
 # Task 2
 # Invoke the function "find_and_replace" using the following scenarios:
